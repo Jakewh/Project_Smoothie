@@ -10,7 +10,7 @@ logo.close()
 # Experient s menu
 otazka = [
   inquirer.List("main_menu",
-                message="MENU",
+                message="VYBER SI",
                 choices=["Nová hra", "Zavřít", "Kredit"],
             ),
 ]
