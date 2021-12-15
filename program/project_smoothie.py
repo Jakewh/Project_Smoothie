@@ -35,3 +35,4 @@ Tímhle Vás chci za celou naši televizi pozdravit a poděkovat, že jste přij
 Chtěla bych Vás požádat, abyste nám takhle do úvodu našeho rozhovoru řekl pár slov.
 Určitě mnoho našich diváků a také posluchačů zajímá právě důvod, který u Vás odstartoval tu myšlenku, která vedla k největšímu masovému celoplošnému hnojení v dějinách celého Mechika?
 A proč zrovna přišel nápad vše vyzkoušet tady u nás ve Vale de la Nachos, když je veřejně známo, že do města jste přijel teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah\".""")
+input("Pokračovat >>>")
