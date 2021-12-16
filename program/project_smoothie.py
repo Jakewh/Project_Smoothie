@@ -10,7 +10,7 @@ def pokracujici_text(text):
     sys.stdout.write(char)
     sys.stdout.flush()
   time.sleep(3)
-
+HOVNO
 # Barvy pro obrázky
 class colors:
     reset = "\033[0m"
