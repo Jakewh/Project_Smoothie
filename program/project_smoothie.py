@@ -69,9 +69,9 @@ logo.close()
 # Začátek menu
 otazka = [
     inquirer.List("main_menu",
-                message="VYBER SI",
-                choices=["Nová hra", "Zavřít", "Kredit"],
-            ),
+    message="VYBER SI",
+    choices=["Nová hra", "Kredit", "Zavřít"],
+    ),
 ]
 odpoved = inquirer.prompt(otazka)
 
@@ -118,8 +118,8 @@ Chtěla bych Vás požádat, abyste nám takhle do úvodu našeho rozhovoru řek
 # Otázka zda pokračovat v rozhovoru
 dalsi_cast = [
     inquirer.List("Dál",
-        message="Pokračovat",
-        choices=["Ano", "Skip"],
+    message="Pokračovat",
+    choices=["Ano", "Skip"],
     ),
 ]
 odpoved = inquirer.prompt(dalsi_cast)
