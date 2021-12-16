@@ -55,8 +55,6 @@ class colors:
     bgWhite = "\033[47m"
     bgBrightWhite = "\033[47;1m"
 
-
-
 input("""###########################################################################
 #\033[31mPro ideální zážitek ze hry prosím maximalizujte okno a stiskněte klávesu.\033[0m#
 ###########################################################################
@@ -80,7 +78,7 @@ odpoved = inquirer.prompt(otazka)
 if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
     os.system("cls||clear") # Vyčištění obazovky
     ninjas_logo = open("ninjas_logo.ans", "r")
-    file_contents = ninjas_logo.read()
+    file_contents = ninjas_logo.read(1, 20)
     print(file_contents)
     ninjas_logo.close()
     print("""    Společný projekt dua \033[34;1mHacker Ninjas\033[0m. První pokus o hříčku po třech týdnech učení se programování.
@@ -94,8 +92,13 @@ elif odpoved == {'main_menu': 'Zavřít'}:  # Zavře okno terminálu
     os.kill(os.getppid(), signal.SIGHUP)
 # Konec menu
 
+# Začátek hry, mezitím v mexiku
 os.system("cls||clear") # Vyčištění obazovky
-print("-----------------MEZITÍM V MEXIKU-----------------")
+mesto = open("mexiko_city.ans", "r")
+file_contents = mesto.read()
+print(file_contents)
+mesto.close()
+print("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
 input("Pokračovat >>>")
 os.system("cls||clear") # Vyčištění obazovky
 
