@@ -106,9 +106,6 @@ mesto = open("mexiko_city.ans", "r")
 file_contents = mesto.read()
 print(file_contents)
 mesto.close()
-#print("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
-
-
 pokracujici_text("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
 os.system("cls||clear") # Vyčištění obazovky
 
@@ -137,3 +134,15 @@ cucu = open("cucumberto.ans", "r")
 file_contents = cucu.read()
 print(file_contents)
 cucu.close()
+print("""\033[32mCucumberto\033[0m: Samosebou paninko, řeknu Vám co budete chtít. Jak se tak dívám, to je to nejmenší co bych pro vás udělal. HAHAHAHAA
+\033[32mRamína Petrželková\033[0m: Ehmmmm no... Zpět k tématu prosím.
+\033[32mCucumberto\033[0m: Ale jo promiňte. (Netykavka jedna) No prostě nemám rád a vůbec nechápu tu dávnou nevraživost a nedůvěru mezi ovocňáky a zeleňáky.
+A tady ve vašem městě je to prý opravdu veliký problém. No a tak jsem neváhal ani chvilku a přispěchal na pomoc. Jsem prostě dobrák víte.
+Já jakožto okurek, jeden z řad zeleňáků nabízím každému ovocňákovi moje superultrapremium kvalitní syntetické hnojivo. A to prosím zdarma!
+...........
+""")
+input(">>>")
+os.system("cls||clear") # Vyčištění obazovky
+
+pokracujici_text("-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m-----------------")
+os.system("cls||clear") # Vyčištění obazovky
