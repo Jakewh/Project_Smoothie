@@ -96,7 +96,7 @@ if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
     ---------------2021------------------
     """)
     input("Pokračovat do hry >>>")
-elif odpoved == {'main_menu': 'Zavřít'}:  # Zavře okno terminálu
+elif odpoved == {"main_menu": "Zavřít"}:  # Zavře okno terminálu
     os.kill(os.getppid(), signal.SIGHUP)
 # Konec menu
 
