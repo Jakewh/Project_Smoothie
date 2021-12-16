@@ -78,7 +78,7 @@ odpoved = inquirer.prompt(otazka)
 if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
     os.system("cls||clear") # Vyčištění obazovky
     ninjas_logo = open("ninjas_logo.ans", "r")
-    file_contents = ninjas_logo.read(1, 20)
+    file_contents = ninjas_logo.read()
     print(file_contents)
     ninjas_logo.close()
     print("""    Společný projekt dua \033[34;1mHacker Ninjas\033[0m. První pokus o hříčku po třech týdnech učení se programování.
