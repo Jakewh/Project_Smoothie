@@ -117,9 +117,9 @@ tv = open("tv.ans", "r")
 file_contents = tv.read()
 print(file_contents)
 tv.close()
-print("KESADILLA TV: MIMOŘÁDNÉ ZPRAVODAJSTVÍ! POSLECHNĚTE SI NOVINKY Z VALE DE LA NACHOS!!")
+print("\033[32mKESADILLA TV\033[0m: MIMOŘÁDNÉ ZPRAVODAJSTVÍ! POSLECHNĚTE SI NOVINKY Z VALE DE LA NACHOS!!")
 input("Pokračovat >>>")
-print("""\033[4mRamína Petrželková\033[0m,,...Děkuji za předání slova ze studia Alejandro. Tady Ramína Petrželková z ranního vysílání KesadillaTV!
+print("""\033[32mRamína Petrželková\033[0m:...Děkuji za předání slova ze studia Alejandro Pomodorová. Tady Ramína Petrželková z ranního vysílání KesadillaTV!
 Zrovna se nacházíme na jižní straně města del Nachos a to konkrétně v provincii El brote más Brillante,
 kde je spolu semnou místní hrdina, filantrop a zastánce chudých a muž jenž plní žaludky všech bez různých skrupulí seňor Cucumberto.
 Tímhle Vás chci za celou naši televizi pozdravit a poděkovat, že jste přijal naše pozvání, ale zrovna k věci!
