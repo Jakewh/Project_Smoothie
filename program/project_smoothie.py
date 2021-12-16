@@ -133,9 +133,8 @@ hnojení v dějinách celého Mechika? A proč zrovna přišel nápad vše vyzko
 teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah?
 """)
 input(">>>")
-
 os.system("cls||clear") # Vyčištění obazovky
-obrazek_start = 173
+obrazek_start = 173 # Obrázek Cucu
 obrazek_stop = 218
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
@@ -150,5 +149,30 @@ Já jakožto okurek, jeden z řad zeleňáků nabízím každému ovocňákovi m
 input(">>>")
 os.system("cls||clear") # Vyčištění obazovky
 
+# O nějaký čas později
+obrazek_start = 219
+obrazek_stop = 264
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
 pokracujici_text("-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m-----------------")
 os.system("cls||clear") # Vyčištění obazovky
+
+# Pomelo spí
+print("Už dlouho spíš a venku je bílý den. Měl by jsi konečně vstávat...")
+vstavat = [ # Otázka vstávat?
+    inquirer.List("menu",
+    message="Vstávat?",
+    choices=[" Ano", "Ne"],
+    ),
+]
+odpoved = inquirer.prompt(vstavat)
+
+if odpoved == {'menu': 'Ne'}:
+    obrazek_start = 173 # Obrázek Cucu
+    obrazek_stop = 218
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
+    print("""\033[32mCucumberto\033[0m: VSTÁVEJ TY JEDEN PITOMEJ LENOCHU!! To si mám snídani dělat sám?
+    """)
