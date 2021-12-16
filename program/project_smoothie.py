@@ -70,10 +70,11 @@ input("""#######################################################################
 """)
 # Logo hry
 os.system("cls||clear") # Vyčištění obazovky
-logo = open("logo.ans", "r")
-file_contents = logo.read()
-print(file_contents)
-logo.close()
+obrazek_start = 2
+obrazek_stop = 47
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
 
 # Začátek menu
 otazka = [
@@ -86,8 +87,8 @@ odpoved = inquirer.prompt(otazka)
 
 if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
     os.system("cls||clear") # Vyčištění obazovky
-    obrazek_start = 2
-    obrazek_stop = 47
+    obrazek_start = 48
+    obrazek_stop = 80
     with open("ASCII_pictures.ans") as f:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
@@ -113,10 +114,11 @@ pokracujici_text("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------
 os.system("cls||clear") # Vyčištění obazovky
 
 # Tv zprávy a rozhovor z Cucu
-tv = open("tv.ans", "r")
-file_contents = tv.read()
-print(file_contents)
-tv.close()
+obrazek_start = 127
+obrazek_stop = 172
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
 print("\033[32mKESADILLA TV\033[0m: ....to je vše ze zahraničního zpradodajství. Nyní novinky z našeho města!!")
 input(">>>")
 print("""\033[32mRamína Petrželková\033[0m:...Děkuji za předání slova ze studia Alejandro Pomodorová. Tady Ramína Petrželková z ranního vysílání KesadillaTV!
@@ -133,10 +135,11 @@ teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah
 input(">>>")
 
 os.system("cls||clear") # Vyčištění obazovky
-cucu = open("cucumberto.ans", "r")
-file_contents = cucu.read()
-print(file_contents)
-cucu.close()
+obrazek_start = 173
+obrazek_stop = 218
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
 print("""\033[32mCucumberto\033[0m: Samosebou paninko, řeknu Vám co budete chtít. Jak se tak dívám, to je to nejmenší co bych pro vás udělal. HAHAHAHAA
 \033[32mRamína Petrželková\033[0m: Ehmmmm no... Zpět k tématu prosím.
 \033[32mCucumberto\033[0m: Ale jo promiňte. (Netykavka jedna) No prostě nemám rád a vůbec nechápu tu dávnou nevraživost a nedůvěru mezi ovocňáky a zeleňáky.
