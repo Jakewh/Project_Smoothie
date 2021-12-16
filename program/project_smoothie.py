@@ -130,6 +130,7 @@ print("""Určitě mnoho našich diváků a také posluchačů zajímá právě d
 hnojení v dějinách celého Mechika? A proč zrovna přišel nápad vše vyzkoušet tady u nás ve Vale de la Nachos, když je veřejně známo, že jste do města přijel 
 teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah?
 """)
+input(">>>")
 
 os.system("cls||clear") # Vyčištění obazovky
 cucu = open("cucumberto.ans", "r")
