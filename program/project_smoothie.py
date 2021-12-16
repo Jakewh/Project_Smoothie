@@ -112,32 +112,24 @@ mesto.close()
 pokracujici_text("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
 os.system("cls||clear") # Vyčištění obazovky
 
-# Tv zprávy
+# Tv zprávy a rozhovor z Cucu
 tv = open("tv.ans", "r")
 file_contents = tv.read()
 print(file_contents)
 tv.close()
-print("\033[32mKESADILLA TV\033[0m: MIMOŘÁDNÉ ZPRAVODAJSTVÍ! POSLECHNĚTE SI NOVINKY Z VALE DE LA NACHOS!!")
-input("Pokračovat >>>")
+print("\033[32mKESADILLA TV\033[0m: ....to je vše ze zahraničního zpradodajství. Nyní novinky z našeho města!!")
+input(">>>")
 print("""\033[32mRamína Petrželková\033[0m:...Děkuji za předání slova ze studia Alejandro Pomodorová. Tady Ramína Petrželková z ranního vysílání KesadillaTV!
 Zrovna se nacházíme na jižní straně města del Nachos a to konkrétně v provincii El brote más Brillante,
 kde je spolu semnou místní hrdina, filantrop a zastánce chudých a muž jenž plní žaludky všech bez různých skrupulí seňor Cucumberto.
 Tímhle Vás chci za celou naši televizi pozdravit a poděkovat, že jste přijal naše pozvání, ale zrovna k věci!
 Chtěla bych Vás požádat, abyste nám takhle do úvodu našeho rozhovoru řekl pár slov.
 """)
-# Otázka zda pokračovat v rozhovoru
-dalsi_cast = [
-    inquirer.List("Dál",
-    message="Pokračovat",
-    choices=["Ano", "Skip"],
-    ),
-]
-odpoved = inquirer.prompt(dalsi_cast)
-if odpoved == {"Dál": "Ano"}:
-    print("""Určitě mnoho našich diváků a také posluchačů zajímá právě důvod, který u Vás odstartoval tu myšlenku, která vedla k největšímu masovému celoplošnému
-    hnojení v dějinách celého Mechika? A proč zrovna přišel nápad vše vyzkoušet tady u nás ve Vale de la Nachos, když je veřejně známo, že jste do města přijel 
-    teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah?
-    """)
+input(">>>")
+print("""Určitě mnoho našich diváků a také posluchačů zajímá právě důvod, který u Vás odstartoval tu myšlenku, která vedla k největšímu masovému celoplošnému
+hnojení v dějinách celého Mechika? A proč zrovna přišel nápad vše vyzkoušet tady u nás ve Vale de la Nachos, když je veřejně známo, že jste do města přijel 
+teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah?
+""")
 
 os.system("cls||clear") # Vyčištění obazovky
 cucu = open("cucumberto.ans", "r")
