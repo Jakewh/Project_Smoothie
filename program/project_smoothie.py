@@ -1,11 +1,12 @@
 import os, re, inquirer, signal, time, sys
+from itertools import islice
 # os - vyčištění okna
 # re, inquirer - balíček menu
 # signal - umožňuje zavření terminálu
 # time, sys - importuje časové funkce - samo pokračuje v textu po x sekundách
+# islice - umožňuje vyčíst konkrétní řádky z dokumentu - používáme k vyčítání obrázku z jednoho dokumentu
 
-# po 3 sekundách samo pokračuje v textu - stačí psát pokracujici_text(""), použito na "mezitím v mexiku"
-def pokracujici_text(text):
+def pokracujici_text(text): # po 3 sekundách samo pokračuje v textu - stačí psát pokracujici_text(""), použito na "mezitím v mexiku"
   for char in str(text):
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -85,10 +86,11 @@ odpoved = inquirer.prompt(otazka)
 
 if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
     os.system("cls||clear") # Vyčištění obazovky
-    ninjas_logo = open("ninjas_logo.ans", "r")
-    file_contents = ninjas_logo.read()
-    print(file_contents)
-    ninjas_logo.close()
+    obrazek_start = 2
+    obrazek_stop = 47
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
     print("""    Společný projekt dua \033[34;1mHacker Ninjas\033[0m. První pokus o hříčku po třech týdnech učení se programování.
     ------------------------------------------------------------------------------------------------
     Jakub Kolář e:\ kolarkuba@gmail.com
@@ -102,10 +104,11 @@ elif odpoved == {"main_menu": "Zavřít"}:  # Zavře okno terminálu
 
 # Začátek hry, mezitím v mexiku
 os.system("cls||clear") # Vyčištění obazovky
-mesto = open("mexiko_city.ans", "r")
-file_contents = mesto.read()
-print(file_contents)
-mesto.close()
+obrazek_start = 81
+obrazek_stop = 126
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
 pokracujici_text("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
 os.system("cls||clear") # Vyčištění obazovky
 
