@@ -1,7 +1,15 @@
-import os, re, inquirer, signal
+import os, re, inquirer, signal, time, sys
 # os - vyčištění okna
 # re, inquirer - balíček menu
 # signal - umožňuje zavření terminálu
+# time, sys - importuje časové funkce - samo pokračuje v textu po x sekundách
+
+# po 3 sekundách samo pokračuje v textu - stačí psát pokracujici_text(""), použito na "mezitím v mexiku"
+def pokracujici_text(text):
+  for char in str(text):
+    sys.stdout.write(char)
+    sys.stdout.flush()
+  time.sleep(3)
 
 # Barvy pro obrázky
 class colors:
@@ -98,8 +106,10 @@ mesto = open("mexiko_city.ans", "r")
 file_contents = mesto.read()
 print(file_contents)
 mesto.close()
-print("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
-input("Pokračovat >>>")
+#print("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
+
+
+pokracujici_text("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
 os.system("cls||clear") # Vyčištění obazovky
 
 # Tv zprávy
@@ -128,3 +138,9 @@ if odpoved == {"Dál": "Ano"}:
     hnojení v dějinách celého Mechika? A proč zrovna přišel nápad vše vyzkoušet tady u nás ve Vale de la Nachos, když je veřejně známo, že jste do města přijel 
     teprve nedávno a nemáte vůči němu žádné závazky ani jiný osobní vztah?
     """)
+
+os.system("cls||clear") # Vyčištění obazovky
+cucu = open("cucumberto.ans", "r")
+file_contents = cucu.read()
+print(file_contents)
+cucu.close()
