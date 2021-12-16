@@ -11,7 +11,7 @@ def pokracujici_text(text): # po 3 sekundách samo pokračuje v textu - stačí 
     sys.stdout.write(char)
     sys.stdout.flush()
   time.sleep(3)
-
+HOVNO
 # Barvy pro obrázky
 class colors:
     reset = "\033[0m"
