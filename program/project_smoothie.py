@@ -222,12 +222,12 @@ elif odpoved == {'menu': 'Ano'}:
         print("".join(radky_obrazku))
         print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
     # elif odpoved pro ANO
-    print("\033[32mPomelo\033[0m: Ještě jednoou se omlouvám El Padrino! Vůbec nechápu jak se to mohlo stát, že jsem zaspal.")
+    print("\033[32mPomelo de Tonto\033[0m: Ještě jednoou se omlouvám El Padrino! Vůbec nechápu jak se to mohlo stát, že jsem zaspal.")
     print("\033[32mCucumberto\033[0m: Ale já moc dobře vím jak se to mohlo stát! Do rána tady chlastat Coronu a požírat jablečné Tacos!\nA pak ráno makat to už moc nevoní, že ?!!")
     print("\033[32mPomelo de Tonto\033[0m: Omlouvám se ještě jednou pane, nemusíte ani nic říkat a jdu na to. K jídlu jako obvykle pane,že?!")
     print("..........El Padrino tiše a bez odpovědi odchází z místnosti..........")
     input(">>>")
-    print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu, udělej tohle, udělej tamhlencto vamos, vamos. Sám nemusí dělat nic, ale druhé otravovat to ano, ale co naplat. EL Padrino je El Padrino.
+    print("""\033[32mPomelo de Tonto\033[0m: No to se mu takhle kecá po ránu, udělej tohle, udělej tamhlencto vamos, vamos. Sám nemusí dělat nic, ale druhé otravovat to ano, ale co naplat. EL Padrino je El Padrino.
     V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
     Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.
     No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.
