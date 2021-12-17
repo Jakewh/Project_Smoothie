@@ -227,11 +227,12 @@ elif odpoved == {'menu': 'Ano'}:
     print("\033[32mPomelo de Tonto\033[0m: Omlouvám se ještě jednou pane, nemusíte ani nic říkat a jdu na to. K jídlu jako obvykle pane,že?!")
     print("..........El Padrino tiše a bez odpovědi odchází z místnosti..........")
     input(">>>")
-    print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu ten nemusí nic dělat, ale co naplat. EL Padrino je El Padrino.
+    print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu, udělej tohle, udělej tamhlencto vamos, vamos. Sám nemusí dělat nic, ale druhé otravovat to ano, ale co naplat. EL Padrino je El Padrino.
     V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
     Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.
     No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.
     """)
     pokracujici_text("----------\033[32;1mPo pár hodinách úklidu a příprav v kuchyni\033[0m----------")
+
 
 
