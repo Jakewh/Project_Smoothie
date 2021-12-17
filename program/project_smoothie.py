@@ -95,10 +95,10 @@ if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
     print("""    Společný projekt dua \033[34;1mHacker Ninjas\033[0m. První pokus o hříčku po třech týdnech učení se programování.
-    ------------------------------------------------------------------------------------------------
-    Jakub Kolář e:\ kolarkuba@gmail.com
-    Martin Holomek e:\ santexD@seznam.cz
-    ---------------2021------------------
+------------------------------------------------------------------------------------------------
+Jakub Kolář e:\ kolarkuba@gmail.com
+Martin Holomek e:\ santexD@seznam.cz
+---------------2021------------------
     """)
     input("Pokračovat do hry >>>")
 elif odpoved == {"main_menu": "Zavřít"}:  # Zavře okno terminálu
