@@ -220,6 +220,7 @@ elif odpoved == {'menu': 'Ano'}:
     with open("ASCII_pictures.ans") as f:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
+        print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
     # elif odpoved pro ANO
     print("\033[32mPomelo\033[0m: Ještě jednoou se omlouvám El Padrino! Vůbec nechápu jak se to mohlo stát, že jsem zaspal.")
     print("\033[32mCucumberto\033[0m: Ale já moc dobře vím jak se to mohlo stát! Do rána tady chlastat Coronu a požírat jablečné Tacos!\nA pak ráno makat to už moc nevoní, že ?!!")
