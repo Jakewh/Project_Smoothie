@@ -273,7 +273,7 @@ if odpoved == {'main_menu': 'Zůstat'}:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
-    print("\033[32mCucumberto\033[0m: Zase ty? Tak to už přestává všechno! Do odšťavňovače s ním!")
+    print("\033[32mCucumberto\033[0m: Zase ty? Tak to už přestává všechno! Do odšťavňovače s ním! Beztak tady jenom čmucháš.")
     input()
     pass
 #elif odpoved == {'main_menu': 'Schovat do skříně'}:
