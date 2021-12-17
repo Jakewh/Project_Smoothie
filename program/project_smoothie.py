@@ -266,7 +266,7 @@ odpoved = inquirer.prompt(otazka)
 
 if odpoved == {'main_menu': 'Zůstat'}:
     os.system("cls||clear") # Vyčištění obazovky
-    live.clear()
+    live.clear()    # Životy pryč - konec
     obrazek_start = 679 # Game Over
     obrazek_stop = 724
     with open("ASCII_pictures.ans") as f:
@@ -276,4 +276,49 @@ if odpoved == {'main_menu': 'Zůstat'}:
     print("\033[32mCucumberto\033[0m: Zase ty? Tak to už přestává všechno! Do odšťavňovače s ním! Beztak tady jenom čmucháš.")
     input()
     pass
-#elif odpoved == {'main_menu': 'Schovat do skříně'}:
+elif odpoved == {'main_menu': 'Schovat do skříně'}:
+    os.system("cls||clear") # Vyčištění obazovky
+    live.pop()
+    obrazek_start = 311 # Pomelo
+    obrazek_stop = 356
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+    print("\033[32mPomelo de Tonto\033[0m: Hehe tady jsem v pohodě. Ve filmech se do skříně schovávají běžně a vždycky jim to projde")
+    print("\033[32mCucumberto\033[0m: Hele koukni do té skříně. To je jak z filmu co? Tam by se stejně mohl schovat jenom debil")
+    print("\033[32mPomelo de Tonto\033[0m: Hups")
+    print("\033[32mCucumberto\033[0m: To snad... Já se tě dneska nezbavím? Co tady vůbec hledáš?\nPadej zpátky do kuchyně. To si ještě vyřídíme!")
+    input(">>>")
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 587 # Avocado
+obrazek_stop = 632
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("\033[32mNeznámý\033[0m: Šéfe nikdo tu není. Asi nějaká ratas nebo jiná havěť. S Vaším dovolením El Padrino už půjdu.\nMusím nám dohlídnout na výrobu té dobroty. Mrk mrk")
+print("\033[32mCucumberto\033[0m: Jasná věc. Ať všichni dělají na 120%. Musíme toho mít co nejvíc, a pak to konečně ukončíme.")
+input(">>>")
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 541 # Avocado a Pomelo
+obrazek_stop = 586
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("\033[32mPomelo de Tonto\033[0m: Moment. Já ho přece znám. No jistě, dneska o něm zrovna vyšel článek v LA PERSONAS.\nKde to jenom mám...")
+input(">>>")
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 633 # Avocado a Pomelo
+obrazek_stop = 678
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("""\033[32mPomelo de Tonto\033[0m: No jistě. Tady je to. \033[35mMístní podnikatel Avocado Piedra Grande náhle zbohatnul po té, co začal výrábět syntetické hnojivo
+pro seňora Cucumberta. Policie ho podezírá z různých daňových úniků a jiným defraudacím. Také je v podezření, že ovládá gang avokád zvaný El Sombreros.
+Ti terorizují celou městkou čtvrť Gheto del Rata.\033[0m
+Tady něco nehraje. Vypadá to, že náš El Padrino seňor Cucumberto nebude takový samaritánec, za kterého se vydává. Musím si dávat pozor!
+""")
+
