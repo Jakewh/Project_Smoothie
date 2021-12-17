@@ -195,6 +195,7 @@ if odpoved == {'menu': 'Ne'}:
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
     print("\033[32mPomelo\033[0m: OH! Co? Já zaspal?! Velice se omlouvám El Padrino. Nehcápu co se to stalo. Hned jdu na to!")
     print("\033[32mCucumberto\033[0m: Tak už aby to sakra bylo! Ještě jednou a nechám tě vylisovat. To se mi snad zdá...")
+
     input(">>>")
 # Příprava jídla
     #verze pro ne
@@ -215,4 +216,5 @@ if odpoved == {'menu': 'Ne'}:
     V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
     Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.
     No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.""")
-    pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------")
+
+
