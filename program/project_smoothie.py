@@ -210,8 +210,8 @@ if odpoved == {'menu': 'Ne'}:
 
 elif odpoved == {'menu': 'Ano'}:
     os.system("cls||clear") # Vyčištění obazovky
-    obrazek_start =  # Obrázek 
-    obrazek_stop = 
+    obrazek_start = 173 # Obrázek 
+    obrazek_stop = 218
     with open("ASCII_pictures.ans") as f:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
@@ -223,6 +223,8 @@ elif odpoved == {'menu': 'Ano'}:
     print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu ten nemusí nic dělat, ale co naplat. EL Padrino je El Padrino.
     V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
     Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.
-    No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.""")
+    No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.
+    """)
+    pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------")
 
 
