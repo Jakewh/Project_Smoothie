@@ -195,3 +195,26 @@ if odpoved == {'menu': 'Ne'}:
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
     print("\033[32mPomelo\033[0m: OH! Co? Já zaspal?! Velice se omlouvám El Padrino. Nehcápu co se to stalo. Hned jdu na to!")
     print("\033[32mCucumberto\033[0m: Tak už aby to sakra bylo! Ještě jednou a nechám tě vylisovat. To se mi snad zdá...")
+
+    input(">>>")
+# Příprava jídla
+    #verze pro ne
+    print("""\033[32mPomelo\033[0m: Ten má dnes zase náladu teda. Ale co nadělám El Padrino je hold El Padrino.
+    Kdybych tak jen veděl na co bude mít dnes zase chuť, když si ji včera tak znechutil zápasem.
+    Je mi na stopro jasné, že jak dojdu do kuchyně bude tam zase absolutní bordel a nic k nalezení, neboť včerejší zápas mezi Elta Bandoleros Citrutos proti La Samplíta Celeria byl dost divoký
+    .............
+    No to jsem si mohl myslet. Všude bordel, lednice prázdná, nikde žádné suroviny. Fakt paráda! Zase jen práce navíc...
+    Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu poslouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
+    """)
+   # pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------") - tady bych to kdyžtak střihnul, vložil obrazek a pak pokračoval stylem že Padrino vola z vrchu ze chce další jídlo, na které ale nejsou suroviny tak se pomelo rozhodne jit do skladu a tam narazí na avokada a toho vedce a neco zaslechne a vidá se je sledovat
+    # elif odpoved pro ANO
+    print("\033[32mPomelo\033[0m: Ještě jednoou se omlouvám El Padrino! Vůbec nechápu jak se to mohlo stát, že jsem zaspal.")
+    print("\033[32mCucumberto\033[0m: Ale já moc dobře vím jak se to mohlo stát! Do rána tady chlastat Coronu a požírat jablečné Tacos!\nA pak ráno makat to už moc nevoní, že ?!!")
+    print("\033[32mPomelo\033[0m: Omlouvám se ještě jednou pane, nemusíte ani nic říkat a jdu na to. K jídlu jako obvykle pane,že?!")
+    print("..........El Padrino tiše a bez odpovědi odchází z místnosti..........")
+    print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu ten nemusí nic dělat, ale co naplat. EL Padrino je El Padrino.
+    V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
+    Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.
+    No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.""")
+
+
