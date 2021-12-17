@@ -152,7 +152,7 @@ input(">>>")
 os.system("cls||clear") # Vyčištění obazovky
 
 # O nějaký čas později
-obrazek_start = 219
+obrazek_start = 219 # Čas
 obrazek_stop = 264
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
@@ -161,6 +161,11 @@ pokracujici_text("-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m----
 os.system("cls||clear") # Vyčištění obazovky
 
 # Pomelo spí
+obrazek_start = 265 # Pomelo_sleep
+obrazek_stop = 310
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
 print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
 print("Už dlouho spíš a venku je bílý den. Měl by jsi konečně vstávat...")
 vstavat = [ # Otázka vstávat?
@@ -170,14 +175,23 @@ vstavat = [ # Otázka vstávat?
     ),
 ]
 odpoved = inquirer.prompt(vstavat)
-
 if odpoved == {'menu': 'Ne'}:
+    os.system("cls||clear") # Vyčištění obazovky
     obrazek_start = 173 # Obrázek Cucu
     obrazek_stop = 218
     with open("ASCII_pictures.ans") as f:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
     live.pop()  # Mínus jeden život
-    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")
-    print("""\033[32mCucumberto\033[0m: VSTÁVEJ TY JEDEN PITOMEJ LENOCHU!! To si mám snídani dělat sám?
-    """)
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
+    print("\033[32mCucumberto\033[0m: VSTÁVEJ TY JEDEN PITOMEJ LENOCHU!! To si mám snídani dělat sám?\nŽe já tě tehdy na té plantáži nenechal schnít! Jsi mi k ničemu.")
+    input(">>>")
+    os.system("cls||clear") # Vyčištění obazovky
+    obrazek_start = 311 # Obrázek Pomelo
+    obrazek_stop = 356
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
+    print("\033[32mPomelo\033[0m: OH! Co? Já zaspal?! Velice se omlouvám El Padrino. Nehcápu co se to stalo. Hned jdu na to!")
+    print("\033[32mCucumberto\033[0m: Tak už aby to sakra bylo! Ještě jednou a nechám tě vylisovat. To se mi snad zdá...")
