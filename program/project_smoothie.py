@@ -95,10 +95,10 @@ if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
     print("""    Společný projekt dua \033[34;1mHacker Ninjas\033[0m. První pokus o hříčku po třech týdnech učení se programování.
-    ------------------------------------------------------------------------------------------------
-    Jakub Kolář e:\ kolarkuba@gmail.com
-    Martin Holomek e:\ santexD@seznam.cz
-    ---------------2021------------------
+------------------------------------------------------------------------------------------------
+Jakub Kolář e:\ kolarkuba@gmail.com
+Martin Holomek e:\ santexD@seznam.cz
+---------------2021------------------
     """)
     input("Pokračovat do hry >>>")
 elif odpoved == {"main_menu": "Zavřít"}:  # Zavře okno terminálu
@@ -160,8 +160,8 @@ with open("ASCII_pictures.ans") as f:
 pokracujici_text("-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m-----------------")
 os.system("cls||clear") # Vyčištění obazovky
 
-# Pomelo spí
-obrazek_start = 265 # Pomelo_sleep
+# Pomelo de Tonto spí
+obrazek_start = 265 # Pomelo de Tonto_sleep
 obrazek_stop = 310
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
@@ -171,7 +171,7 @@ print("Už dlouho spíš a venku je bílý den. Měl by jsi konečně vstávat..
 vstavat = [ # Otázka vstávat?
     inquirer.List("menu",
     message="Vstávat?",
-    choices=[" Ano", "Ne"],
+    choices=["Ano", "Ne"],
     ),
 ]
 odpoved = inquirer.prompt(vstavat)
@@ -187,25 +187,30 @@ if odpoved == {'menu': 'Ne'}:
     print("\033[32mCucumberto\033[0m: VSTÁVEJ TY JEDEN PITOMEJ LENOCHU!! To si mám snídani dělat sám?\nŽe já tě tehdy na té plantáži nenechal schnít! Jsi mi k ničemu.")
     input(">>>")
     os.system("cls||clear") # Vyčištění obazovky
-    obrazek_start = 311 # Obrázek Pomelo
+    obrazek_start = 311 # Obrázek Pomelo de Tonto
     obrazek_stop = 356
     with open("ASCII_pictures.ans") as f:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
-    print("\033[32mPomelo\033[0m: OH! Co? Já zaspal?! Velice se omlouvám El Padrino. Nehcápu co se to stalo. Hned jdu na to!")
+    print("\033[32mPomelo de Tonto\033[0m: OH! Co? Já zaspal?! Velice se omlouvám El Padrino. Nehcápu co se to stalo. Hned jdu na to!")
     print("\033[32mCucumberto\033[0m: Tak už aby to sakra bylo! Ještě jednou a nechám tě vylisovat. To se mi snad zdá...")
-
     input(">>>")
-# Příprava jídla
-    #verze pro ne
-    print("""\033[32mPomelo\033[0m: Ten má dnes zase náladu teda. Ale co nadělám El Padrino je hold El Padrino.
-    Kdybych tak jen veděl na co bude mít dnes zase chuť, když si ji včera tak znechutil zápasem.
-    Je mi na stopro jasné, že jak dojdu do kuchyně bude tam zase absolutní bordel a nic k nalezení, neboť včerejší zápas mezi Elta Bandoleros Citrutos proti La Samplíta Celeria byl dost divoký
-    .............
-    No to jsem si mohl myslet. Všude bordel, lednice prázdná, nikde žádné suroviny. Fakt paráda! Zase jen práce navíc...
-    Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu poslouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
+    
+    os.system("cls||clear") # Vyčištění obazovky
+    obrazek_start = 403 # Obrázek cucu palace
+    obrazek_stop = 448
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
+    print("\033[32mPomelo de Tonto\033[0m: Ten má dnes zase náladu teda. Ale co nadělám El Padrino je hold El Padrino.\nKdybych tak jen veděl na co bude mít dnes zase chuť, když si ji včera tak znechutil zápasem.")
+    print("Je mi na stopro jasné, že jak dojdu do kuchyně bude tam zase absolutní bordel a nic k nalezení, neboť včerejší zápas\nmezi Elta Bandoleros Citrutos proti La Samplíta Celeria byl dost divoký")
+    print(".............")
+    print("No to jsem si mohl myslet. Všude bordel, lednice prázdná, nikde žádné suroviny. Fakt paráda! Zase jen práce navíc...")
+    print("""Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu\nposlouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
     """)
+
     pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------") 
 
 elif odpoved == {'menu': 'Ano'}:
@@ -218,7 +223,7 @@ elif odpoved == {'menu': 'Ano'}:
     # elif odpoved pro ANO
     print("\033[32mPomelo\033[0m: Ještě jednoou se omlouvám El Padrino! Vůbec nechápu jak se to mohlo stát, že jsem zaspal.")
     print("\033[32mCucumberto\033[0m: Ale já moc dobře vím jak se to mohlo stát! Do rána tady chlastat Coronu a požírat jablečné Tacos!\nA pak ráno makat to už moc nevoní, že ?!!")
-    print("\033[32mPomelo\033[0m: Omlouvám se ještě jednou pane, nemusíte ani nic říkat a jdu na to. K jídlu jako obvykle pane,že?!")
+    print("\033[32mPomelo de Tonto\033[0m: Omlouvám se ještě jednou pane, nemusíte ani nic říkat a jdu na to. K jídlu jako obvykle pane,že?!")
     print("..........El Padrino tiše a bez odpovědi odchází z místnosti..........")
     print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu ten nemusí nic dělat, ale co naplat. EL Padrino je El Padrino.
     V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
