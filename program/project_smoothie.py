@@ -206,7 +206,15 @@ if odpoved == {'menu': 'Ne'}:
     No to jsem si mohl myslet. Všude bordel, lednice prázdná, nikde žádné suroviny. Fakt paráda! Zase jen práce navíc...
     Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu poslouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
     """)
-   # pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------") - tady bych to kdyžtak střihnul, vložil obrazek a pak pokračoval stylem že Padrino vola z vrchu ze chce další jídlo, na které ale nejsou suroviny tak se pomelo rozhodne jit do skladu a tam narazí na avokada a toho vedce a neco zaslechne a vidá se je sledovat
+    pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------") 
+
+elif odpoved == {'menu': 'Ano'}:
+    os.system("cls||clear") # Vyčištění obazovky
+    obrazek_start =  # Obrázek 
+    obrazek_stop = 
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
     # elif odpoved pro ANO
     print("\033[32mPomelo\033[0m: Ještě jednoou se omlouvám El Padrino! Vůbec nechápu jak se to mohlo stát, že jsem zaspal.")
     print("\033[32mCucumberto\033[0m: Ale já moc dobře vím jak se to mohlo stát! Do rána tady chlastat Coronu a požírat jablečné Tacos!\nA pak ráno makat to už moc nevoní, že ?!!")
