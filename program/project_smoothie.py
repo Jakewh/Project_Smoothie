@@ -195,8 +195,7 @@ if odpoved == {'menu': 'Ne'}:
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
     print("\033[32mPomelo de Tonto\033[0m: OH! Co? Já zaspal?! Velice se omlouvám El Padrino. Nehcápu co se to stalo. Hned jdu na to!")
     print("\033[32mCucumberto\033[0m: Tak už aby to sakra bylo! Ještě jednou a nechám tě vylisovat. To se mi snad zdá...")
-    input(">>>")
-    
+    input(">>>")    
     os.system("cls||clear") # Vyčištění obazovky
     obrazek_start = 403 # Obrázek cucu palace
     obrazek_stop = 448
@@ -211,7 +210,6 @@ if odpoved == {'menu': 'Ne'}:
     print("""Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu\nposlouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
     """)
     input(">>>")
-   
 elif odpoved == {'menu': 'Ano'}:
     os.system("cls||clear") # Vyčištění obazovky
     obrazek_start = 403 # Obrázek cucu palace
@@ -227,5 +225,56 @@ elif odpoved == {'menu': 'Ano'}:
     print("\033[32mPomelo de Tonto\033[0m: No to se mu takhle kecá po ránu ten nemusí nic dělat, ale co naplat. EL Padrino je El Padrino.\nV kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.")
     print("Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.\nNo nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.")
     input(">>>")
+# Pomelo nese jidlo a něco slyší
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 449 # Pomelo door
+obrazek_stop = 494
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("\033[32mPomelo de Tonto\033[0m: Pane nesu Vám něco na uklid....... Co je? Otevřeno? A někdo tam je. Ne že bych byl zvědavej ale půjdu blíž že jo.")
+input(">>>")
+# Rozhovor Cucu a avocado
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 495 # Door
+obrazek_stop = 540
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("\033[32mCucumberto\033[0m: Jak to vypadá s naším hnojivem? Pokračuje výroba dobře? Nerad bych nechal ovocňáky zbytečně čekat že jo? HAHAHAAA")
+print("\033[32mNeznámý\033[0m: Jasně šéfe. Všechno podle plánu. Řeknu Vám ale že jste po čertech mazanej El Padrino. To se musí nechat!")
+print("\033[32mCucumberto\033[0m: Jooo až budeš jednou taky pořádná okurka a ne jen blbý avokádo, tak třeba taky někdy něčeho dosáhneš.\nStejně nechápu že ty, jako ovocňák, jdeš proti vlastním.")
+print("\033[32mNeznámý\033[0m:Aleee El Padrino. Kdo jiný než vy, by tomu měl rozumnět. Prachy jsou prachy. HAHAHAA a vy platíte královsky.")
+print("\033[32mCucumberto\033[0m: Počkej ticho! Neslyšel jsi něco? Na chodbě. Někdo tam je! Běž to omrknout.")
+input(">>>")
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 449 # Pomelo door
+obrazek_stop = 494
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("\033[32mPomelo de Tonto\033[0m: A doprčic. Já zvědavej hlupák, že si nehledím svýho. Honem se schovám.")
+otazka = [  # Pomelo se musí někam schovat
+    inquirer.List("main_menu",
+    message="Co teď?",
+    choices=["Utéct", "Schovat do skříně", "Zůstat"],
+    ),
+]
+odpoved = inquirer.prompt(otazka)
 
-
+if odpoved == {'main_menu': 'Zůstat'}:
+    os.system("cls||clear") # Vyčištění obazovky
+    live.clear()
+    obrazek_start = 679 # Game Over
+    obrazek_stop = 724
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+    print("\033[32mCucumberto\033[0m: Zase ty? Tak to už přestává všechno! Do odšťavňovače s ním!")
+    input()
+    pass
+#elif odpoved == {'main_menu': 'Schovat do skříně'}:
