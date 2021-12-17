@@ -64,6 +64,8 @@ class colors:
     bgWhite = "\033[47m"
     bgBrightWhite = "\033[47;1m"
 
+live = ["O", "O", "O"]
+
 input("""###########################################################################
 #\033[31mPro ideální zážitek ze hry prosím maximalizujte okno a stiskněte klávesu.\033[0m#
 ###########################################################################
@@ -159,6 +161,7 @@ pokracujici_text("-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m----
 os.system("cls||clear") # Vyčištění obazovky
 
 # Pomelo spí
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
 print("Už dlouho spíš a venku je bílý den. Měl by jsi konečně vstávat...")
 vstavat = [ # Otázka vstávat?
     inquirer.List("menu",
@@ -174,5 +177,7 @@ if odpoved == {'menu': 'Ne'}:
     with open("ASCII_pictures.ans") as f:
         radky_obrazku = islice(f, obrazek_start, obrazek_stop)
         print("".join(radky_obrazku))
+    live.pop()  # Mínus jeden život
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")
     print("""\033[32mCucumberto\033[0m: VSTÁVEJ TY JEDEN PITOMEJ LENOCHU!! To si mám snídani dělat sám?
     """)
