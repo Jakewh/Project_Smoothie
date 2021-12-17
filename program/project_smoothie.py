@@ -211,7 +211,7 @@ if odpoved == {'menu': 'Ne'}:
     print("""Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu\nposlouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
     """)
 
-    pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------") 
+    pokracujici_text("----------\033[32;1mPo pár hodinách úklidu a příprav v kuchyni\033[0m----------") 
 
 elif odpoved == {'menu': 'Ano'}:
     os.system("cls||clear") # Vyčištění obazovky
@@ -226,11 +226,12 @@ elif odpoved == {'menu': 'Ano'}:
     print("\033[32mCucumberto\033[0m: Ale já moc dobře vím jak se to mohlo stát! Do rána tady chlastat Coronu a požírat jablečné Tacos!\nA pak ráno makat to už moc nevoní, že ?!!")
     print("\033[32mPomelo de Tonto\033[0m: Omlouvám se ještě jednou pane, nemusíte ani nic říkat a jdu na to. K jídlu jako obvykle pane,že?!")
     print("..........El Padrino tiše a bez odpovědi odchází z místnosti..........")
+    input(">>>")
     print("""\033[32mPomelo\033[0m: No to se mu takhle kecá po ránu ten nemusí nic dělat, ale co naplat. EL Padrino je El Padrino.
     V kuchyni je bordel jako prase, takže to vidím na pár hodin než se vodcaď vůbec dostanu.
     Mierda! takový bordel jsem teda opravdu nečekal, včera jsme se asi s compañeros hodně urvali ze řetězu.
     No nachystám mu jeho oblíbené nálevové Kesadillas tím ho aspoň nachvilku udržím v klidu.
     """)
-    pokracujici_text("---------- Po pár hodinách úklidu a příprav v kuchyni----------")
+    pokracujici_text("----------\033[32;1mPo pár hodinách úklidu a příprav v kuchyni\033[0m----------")
 
 
