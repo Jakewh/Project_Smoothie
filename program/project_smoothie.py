@@ -127,6 +127,7 @@ obrazek_stop = 172
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
     print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
 print("\033[32mKESADILLA TV\033[0m: ....to je vše ze zahraničního zpradodajství. Nyní novinky z našeho města!!")
 input(">>>")
 print("""\033[32mRamína Petrželková\033[0m:...Děkuji za předání slova ze studia Alejandro Pomodorová. Tady Ramína Petrželková z ranního vysílání KesadillaTV!
@@ -147,6 +148,7 @@ obrazek_stop = 218
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
     print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
 print("""\033[32mCucumberto\033[0m: Samosebou paninko, řeknu Vám co budete chtít. Jak se tak dívám, to je to nejmenší co bych pro vás udělal. HAHAHAHAA
 \033[32mRamína Petrželková\033[0m: Ehmmmm no... Zpět k tématu prosím.
 \033[32mCucumberto\033[0m: Ale jo promiňte. (Netykavka jedna) No prostě nemám rád a vůbec nechápu tu dávnou nevraživost a nedůvěru mezi ovocňáky a zeleňáky.
@@ -286,7 +288,7 @@ if odpoved == {'main_menu': 'Zůstat'}:
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
     print("\033[32mCucumberto\033[0m: Zase ty? Tak to už přestává všechno! Do odšťavňovače s ním! Beztak tady jenom čmucháš.")
     input()
-    pass
+    exit()
 elif odpoved == {'main_menu': 'Schovat do skříně'}:
     os.system("cls||clear") # Vyčištění obazovky
     live.pop()
