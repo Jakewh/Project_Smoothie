@@ -112,7 +112,13 @@ obrazek_stop = 126
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
     print("".join(radky_obrazku))
-pokracujici_text("-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------")
+pokracujici_text("""-----------------\033[32;1mMEZITÍM V MEXIKU\033[0m-----------------
+
+
+
+LOADING...
+""")
+
 os.system("cls||clear") # Vyčištění obazovky
 
 # Tv zprávy a rozhovor z Cucu
@@ -157,7 +163,12 @@ obrazek_stop = 264
 with open("ASCII_pictures.ans") as f:
     radky_obrazku = islice(f, obrazek_start, obrazek_stop)
     print("".join(radky_obrazku))
-pokracujici_text("-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m-----------------")
+pokracujici_text("""-----------------\033[32;1mO NĚJAKÝ ČAS POZDĚJI\033[0m-----------------
+
+
+
+LOADING...
+""")
 os.system("cls||clear") # Vyčištění obazovky
 
 # Pomelo de Tonto spí
