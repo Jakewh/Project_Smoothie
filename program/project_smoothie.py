@@ -65,6 +65,7 @@ class colors:
     bgBrightWhite = "\033[47;1m"
 
 live = ["O", "O", "O"]
+hra = ["Kámen", "Nůžky", "Papír"]
 
 input("""###########################################################################
 #\033[31mPro ideální zážitek ze hry prosím maximalizujte okno a stiskněte klávesu.\033[0m#
@@ -334,4 +335,110 @@ pro seňora Cucumberta. Policie ho podezírá z různých daňových úniků a j
 Ti terorizují celou městkou čtvrť Gheto del Rata.\033[0m
 Tady něco nehraje. Vypadá to, že náš El Padrino seňor Cucumberto nebude takový samaritánec, za kterého se vydává. Musím si dávat pozor!
 """)
+input(">>>")
+# Rozhovor Cucu a Mrkvos
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 173 # Cucu
+obrazek_stop = 218
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("""\033[32mCucumberto\033[0m: Tohle nějak smrdí. Pozoruju delší dobu jak se tady ten malej kulatej neřád potuluje. Beztak tady jen slídí, a to by ještě tak hrálo aby na něco přišel.
+Myslím že není důvod k čekání a zbytečně riskovat. Tohle se musí vyřídit jednou pro vždy. Nemám rád překvapení. Vždy je lepší jim předcházet. To je práce pro moji pravou ruku.
+Los Mrkvosi! Kde jsi příteli?!
+""")
+input(">>>")
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 725 # Mrkvos
+obrazek_stop = 770
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("\033[32mLos Mrkvos\033[0m: Tady El Padrino. Vždy pár kroků za vámi a připraven s čímkoliv pomoci.")
+print("""\033[32mCucumberto\033[0m: Ano můj příteli, já vím. Zrovna teď bych něco potřeboval, a s touto prosbou se mohu obrátit pouze na tebe.
+Pořád se tady motá ten Pomelo. Nemám z něj vůbec dobrej pocit. Myslím že je čas se jej zbavit a musí to vypadat jako nehoda...
+""")
+print("\033[32mLos Mrkvos\033[0m: Ale seňore, proč zrovna já? Vždyť přeci víte že je to....")
+print("""\033[32mCucumberto\033[0m: Ano vím příteli. A věř mi, že kdybych měl jinou možnost, nežádal bych to zrovna po tobě. Vždyť jen kvůli tobě je
+tady u mne v domě. Chtít to někdo jiný, odmítl bych.""")
+print("..........Los Mrkvos si povzdechne..........")
+print("\033[32mLos Mrkvos\033[0m: Rozumím pane. Udělám co je třeba a nezklamu Vás.")
+print("\033[32mCucumberto\033[0m: Já vám příteli. Já vím...")
+input(">>>")
+# Předěl
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 219 # Čas
+obrazek_stop = 264
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+pokracujici_text("""-----------------\033[32;1mO UBĚHNE PÁR DNÍ A POMELO SE VEČER VRACÍ Z MĚSTA\033[0m-----------------
 
+
+
+LOADING...
+""")
+# Pomelo, nehoda a cizinec
+os.system("cls||clear") # Vyčištění obazovky
+obrazek_start = 311 # Pomelo
+obrazek_stop = 356
+with open("ASCII_pictures.ans") as f:
+    radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+    print("".join(radky_obrazku))
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+print("""\033[32mPomelo de Tonto\033[0m: To se nám ta párty protáhla. Hlavně ráno nezaspat. Podruhé v tomhle měsící by mi to už El Padrino neodpustil, zase bych musel čistit záchody.
+Brrr ještě teď je mi zle když si vzpomenu na posledně. Musím si pospíšit, ať jsem co nejdříve v posteli. Možná bych to mohl vzít tady tou uličkou.
+""")
+otazka = [
+    inquirer.List("main_menu",
+    message="Kudy?",
+    choices=["Pokračovat normálně po cestě dál", "Zkrátit si cestu tmavou uličkou"],
+    ),
+]
+odpoved = inquirer.prompt(otazka)
+
+if odpoved == {'main_menu': 'Zkrátit si cestu tmavou uličkou'}:
+    os.system("cls||clear") # Vyčištění obazovky
+    obrazek_start = 495 # Door
+    obrazek_stop = 540
+    with open("ASCII_pictures.ans") as f:
+        radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+        print("".join(radky_obrazku))
+    print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+    print("V uličce na zemi sedí cizinec a upřímně na tebe kouká.")
+    otazka = [
+        inquirer.List("main_menu",
+        message="Co teď?",
+        choices=["Oslovit jej", "Zklopit oči a přejít jej"],
+        ),
+    ]
+    odpoved = inquirer.prompt(otazka)
+    if odpoved == {'main_menu': 'Oslovit jej'}:
+        os.system("cls||clear") # Vyčištění obazovky
+        obrazek_start = 817 # Cizinec
+        obrazek_stop = 862
+        with open("ASCII_pictures.ans") as f:
+            radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+            print("".join(radky_obrazku))
+        print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+        print("\033[32mCizinec\033[0m: Jáá zdravíííím tě Pomelo. Pojď blííííž. Něco mít pro tebe.")
+        print("\033[32mPomelo de Tonto\033[0m: Jakto že víš jak se jmenuji?")
+        print("\033[32mPCizinec\033[0m: Když ty mě obehrát, řeknu víc. Když ty vyhrát, já řeknu. Když ty prohrát, přijdeš o jeden život. Chtít hrát?")
+        otazka = [
+            inquirer.List("main_menu",
+            message="Hrát?",
+            choices=["Ano, zkusím to", "Raději ne"],
+            ),
+        ]
+        odpoved = inquirer.prompt(otazka)
+
+        if odpoved == {'main_menu': 'Ano, zkusím to'}:
+            os.system("cls||clear") # Vyčištění obazovky
+            obrazek_start = 817 # Cizinec
+            obrazek_stop = 862
+            with open("ASCII_pictures.ans") as f:
+                radky_obrazku = islice(f, obrazek_start, obrazek_stop)
+                print("".join(radky_obrazku))
+        print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
