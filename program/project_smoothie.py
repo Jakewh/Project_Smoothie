@@ -425,7 +425,7 @@ if odpoved == {'main_menu': 'Zkrátit si cestu tmavou uličkou'}:
         print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
         print("\033[32mCizinec\033[0m: Jáá zdravíííím tě Pomelo. Pojď blííííž. Něco mít pro tebe.")
         print("\033[32mPomelo de Tonto\033[0m: Jakto že víš jak se jmenuji?")
-        print("\033[32mPCizinec\033[0m: Když ty mě obehrát, řeknu víc. Když ty vyhrát, já řeknu. Když ty prohrát, přijdeš o jeden život. Chtít hrát?")
+        print("\033[32mPCizinec\033[0m: Když ty mě obehrát, řeknu víc. Když ty vyhrát, já řeknu. Když ty prohrát, přijít o jeden život. Chtít hrát?")
         otazka = [
             inquirer.List("main_menu",
             message="Hrát?",
