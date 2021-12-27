@@ -394,9 +394,10 @@ print("""\033[32mPáter Berenjena Espiritual\033[0m: No jak jistě víte, Vaše 
 myslíte na to jak se pomstít je tak?""")
 print("""\033[32mPomelo de Tonto\033[0m: Pomstít ano! Ale ne tak jak si myslíte. Zjistil jsem něco hrozného Otče, něco co musím napravit! Někdo prostě musí něco udělat! To kvůli kompostu od Seňora Cucumberta je stav ve Vale de la Nachos takový jaký je!
 Cucumberto přimíchává do hnojiva speciálně upravené substance, které nějak ovlivnují ovoce. Nemůže momentálně říct, proč to tak je, nebo proč se to děje, ale je to něco na co musím přijít...""")
-print("""\033[32mPáter Berenjena Espiritual\033[0m: ...účinky na Ovoce říkáš? To by mohlo dávat smysl, proto je teď tolik podezřele vydařelého ovoce, ale proč se pro Krista objevuje na komposťárně a v takovém hrúzozstrašném stavu?
+print("""\033[32mPáter Berenjena Espiritual\033[0m: ...účinky na Ovoce říkáte? To by mohlo dávat smysl, proto je teď tolik podezřele vydařelého ovoce, ale proč se pro Krista objevuje na komposťárně a v takovém hrúzozstrašném stavu?
 Prosím sestro zaveďte tady pana Pomela do jídelny aby mohl něco sníst a pak ho zamnou přivěďte děkuji Vám.""")
 input(">>>")
+
 
 
 
