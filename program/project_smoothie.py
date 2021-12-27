@@ -350,3 +350,59 @@ if odpoved == {'main_menu': 'Zkrátit si cestu tmavou uličkou'}:
             os.system("cls||clear") # Vyčištění obazovky
             obrazek(817, 862)   # cizinec
         print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
+
+
+
+
+#skip pribeh - pomelo na komposťárně
+
+
+obrazek(x, x)   # přidat foto z kompostu
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # ?? Pomelo začíná na kompostarně s 1 životem ??
+
+pokracujici_text("""-----------------\033[32;1mPo neúspěšném pokusu o vraždu se Pomelo pomalu probouzí k životu!\033[0m-----------------""")
+print("Letmo otvírající oči Pomela se pokoušejí přes pronikavé sluneční světlo otevřít do svých původní velikostí. Kolem dokola byla jen mlha a jemně se třesoučí víčka nedokázala pochopit co se právě deje.")
+print("\033[32mNeznámá osoba pomáhající raněnému:\033[0m: Sestro! Okamžitě přineste kýbl s čistou vodou!")
+print("\033[32mSestra\033[0m: Ano, už běžím Otče! Copak to tak naléhá ?")
+print("\033[32mNeznámá osoba pomáhající raněnému:\033[0m: Tenhle vypadá, že ještě žije! Ale honem budeme potřebovat celé vědro a hlavně čisté obvazy! Honem sestro, přidržte to! Má příliš mnoho amputovaných slupek z důvodu silné tupé rány do šťopky.")
+print("\033[32mSestra\033[0m: Řekla bych, že už je stabilní a víc už pro něj udělat nemůžeme. Musíme se přemístit dál jsou tu další, kteří pomalu přichází o všechnu svou šťávu života!")
+print("\033[32mNeznámá osoba pomáhající raněnému:\033[0m: Dobrá pojďme, ale řekněte dobrovolníkům aby mi všechny pacienty z dneška převezli co nejdříve do kostela!")
+input(">>>")
+
+# kostel
+
+obrazek(x, x)   # přidat foto mexickeho kostela
+print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # ?? Pomelo  1 život ??
+
+pokracujici_text("""-----------------\033[32;1mAsi týden po posledních událostech\033[0m-----------------""")
+
+print("\033[32mPomelo de Tonto\033[0m: Aaagrh. To je bolest! Kde to jako jsem? Co se to ksakru stalo? Kdybych si tak mohl jen vzpomenout. Aaagr moje hlava...")
+print("\033[32mNeznámý\033[0m: Být Váma moc bych prudce bych se nehýbal zranění, která jste utrpěl jsou velmi závažná!")
+print("\033[32mPomelo de Tonto\033[0m: A vy jste kdo jako? Jak víte co se mi stalo a kde to jsem ... Aaahgr")
+print("""\033[32mPáter Berenjena Espiritual\033[0m: Dovol mi abych se představil. Jmenuji se Páter Berenja Espiritual, ale ty mi můžeš říkat otče. A jsi v našem azilu EL Nuneto la Miaros, který budeš určitě znát pod názvem kostel Svatého Rybíze.
+Našli jsme tě asi týden zpět na příměstském kompostňáku, kde denně kontrolujeme zda-li se tam nenachází nešťastníci jako ty.
+Poslední dobou je to velmu zvláštní. Je tam mnohem více rušno než obvykle a co je nejpozoruhodnější, skoro každý kdo se tam najde je Ovocňák...Ale tím tě nechci zatěžovat ty musíš teď hlavně odpočívat. A pokud možno vůbec nevylézat z postele jediné co teĎ potřebujete je spánek."""
+input(">>>")
+
+print("""\033[32mPomelo de Tonto\033[0m: Už jsou to čtyři dny co tu jen ležím a nic jiného nedělám! Musím se už dostat z tohodle pokoje. Kdyby mě jen tak nebolela pořád hlava mierda! Pokusím se najít Otce Berenja.
+Taky by bylo mnohem snažší tu někoho najít kdybych se tu vůbec vyznal ... La puta!.""")
+print("""\033[32mPáter Berenjena Espiritual\033[0m: Být Vámi, takhle bych v místě božím nemluvil. Nicméně jsem velmi rád, že je Vám lépe a byl jste schopen vyjíz ze svého pokoje. Myslím, že je nejlepší čas abychom se konečně seznámili!
+dal jste nám tedy opravdu zabrat pane...?""")
+print("""\033[32mPomelo de Tonto\033[0m: Jsem, já jsem de Tonto. Pomelo de Tonto. A chtěl bych vám poděkovat Otče, že jste se o mě postaral. Nebýt Vás, asi bych na tom komposťáku zdejchnul.
+Za těch pár dní co jsem si tady proležel jsem si rozpomněl a chtěl bych říct, že Vás tu nebudu dlouho otravovat a půjdu...""")
+print("""\033[32mPáter Berenjena Espiritual\033[0m: No jak jistě víte, Vaše zranění... řeknu to na rovinu, to v jakém jsme Vás našli stavu pane Tonto odpovídá tomu, že se Vás chtěl někdo zbavit. A jelikož mi tu říkáte, že jste si rozpomněl, určitě jako jiní
+myslíte na to jak se pomstít je tak?""")
+print("""\033[32mPomelo de Tonto\033[0m: Pomstít ano! Ale ne tak jak si myslíte. Zjistil jsem něco hrozného Otče, něco co musím napravit! Někdo prostě musí něco udělat! To kvůli kompostu od Seňora Cucumberta je stav ve Vale de la Nachos takový jaký je!
+Cucumberto přimíchává do hnojiva speciálně upravené substance, které nějak ovlivnují ovoce. Nemůže momentálně říct, proč to tak je, nebo proč se to děje, ale je to něco na co musím přijít...""")
+print("""\033[32mPáter Berenjena Espiritual\033[0m: ...účinky na Ovoce říkáš? To by mohlo dávat smysl, proto je teď tolik podezřele vydařelého ovoce, ale proč se pro Krista objevuje na komposťárně a v takovém hrúzozstrašném stavu?
+Prosím sestro zaveďte tady pana Pomela do jídelny aby mohl něco sníst a pak ho zamnou přivěďte děkuji Vám.""")
+input(">>>")
+
+
+
+
+
+
+
+
+
