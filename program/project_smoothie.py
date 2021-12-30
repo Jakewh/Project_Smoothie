@@ -6,11 +6,12 @@ from itertools import islice
 # time, sys - importuje časové funkce - samo pokračuje v textu po x sekundách
 # islice - umožňuje vyčíst konkrétní řádky z dokumentu - používáme k vyčítání obrázku z jednoho dokumentu
 
-def pokracujici_text(text): # po 3 sekundách samo pokračuje v textu - stačí psát pokracujici_text(""), použito na "mezitím v mexiku"
-  for char in str(text):
-    sys.stdout.write(char)
-    sys.stdout.flush()
-  time.sleep(3)
+def pokracujici_text(text): 
+    # po 3 sekundách samo pokračuje v textu - stačí psát pokracujici_text(""), použito na "mezitím v mexiku"
+    for char in str(text):
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(3)
 
 def obrazek(obrazek_start = float, obrazek_stop = float):
     # tiskne obrázek ze souboru podle čísel řádků
@@ -96,7 +97,7 @@ otazka = [
 ]
 odpoved = inquirer.prompt(otazka)
 
-if odpoved == {'main_menu': 'Kredit'}:  # Volba Kredit v menu
+if odpoved == {"main_menu": "Kredit"}:  # Volba Kredit v menu
     os.system("cls||clear") # Vyčištění obazovky
     obrazek(48, 80)
     print("""    Společný projekt dua \033[34;1mHacker Ninjas\033[0m. První pokus o hříčku po třech týdnech učení se programování.
@@ -173,7 +174,7 @@ vstavat = [ # Otázka vstávat?
     ),
 ]
 odpoved = inquirer.prompt(vstavat)
-if odpoved == {'menu': 'Ne'}:
+if odpoved == {"menu": "Ne"}:
     os.system("cls||clear") # Vyčištění obazovky
     obrazek(173, 218)   # obrázek cucu
     live.pop()  # Mínus jeden život
@@ -196,7 +197,7 @@ if odpoved == {'menu': 'Ne'}:
     print("""Nachystám mu jeho oblíbené nálevové Kesadillas a pak začnu raději zrovna uklízet a chystat věci na odpoledne nebo zase budu\nposlouchat jak jsem měl zhnít někde na plantáži nebo zplesnivět někde v nějaké díře.
     """)
     input(">>>")
-elif odpoved == {'menu': 'Ano'}:
+elif odpoved == {"menu": "Ano"}:
     os.system("cls||clear") # Vyčištění obazovky
     obrazek(173, 218)   # obrázek pomelo
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Lišta životů
@@ -234,7 +235,7 @@ otazka = [  # Pomelo se musí někam schovat
 ]
 odpoved = inquirer.prompt(otazka)
 
-if odpoved == {'main_menu': 'Zůstat'}:
+if odpoved == {"main_menu": "Zůstat"}:
     os.system("cls||clear") # Vyčištění obazovky
     live.clear()    # Životy pryč - konec
     obrazek(679, 724)   # game over
@@ -242,7 +243,7 @@ if odpoved == {'main_menu': 'Zůstat'}:
     print("\033[32mCucumberto\033[0m: Zase ty? Tak to už přestává všechno! Do odšťavňovače s ním! Beztak tady jenom čmucháš.")
     input()
     exit()
-elif odpoved == {'main_menu': 'Schovat do skříně'}:
+elif odpoved == {"main_menu": "Schovat do skříně"}:
     os.system("cls||clear") # Vyčištění obazovky
     live.pop()
     obrazek(311, 356)   # pomelo
@@ -319,7 +320,7 @@ otazka = [
 ]
 odpoved = inquirer.prompt(otazka)
 
-if odpoved == {'main_menu': 'Zkrátit si cestu tmavou uličkou'}:
+if odpoved == {"main_menu": "Zkrátit si cestu tmavou uličkou"}:
     os.system("cls||clear") # Vyčištění obazovky
     obrazek(495, 540)   # door
     print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
@@ -331,7 +332,7 @@ if odpoved == {'main_menu': 'Zkrátit si cestu tmavou uličkou'}:
         ),
     ]
     odpoved = inquirer.prompt(otazka)
-    if odpoved == {'main_menu': 'Oslovit jej'}:
+    if odpoved == {"main_menu": "Oslovit jej"}:
         os.system("cls||clear") # Vyčištění obazovky
         obrazek(817, 862) # cizinec
         print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
@@ -346,7 +347,7 @@ if odpoved == {'main_menu': 'Zkrátit si cestu tmavou uličkou'}:
         ]
         odpoved = inquirer.prompt(otazka)
 
-        if odpoved == {'main_menu': 'Ano, zkusím to'}:
+        if odpoved == {"main_menu": "Ano, zkusím to"}:
             os.system("cls||clear") # Vyčištění obazovky
             obrazek(817, 862)   # cizinec
         print(150*" ", "Životy ", "\033[31;1m", " ".join(live), "\033[0m")  # Životy
